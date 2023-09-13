@@ -1,1 +1,73 @@
-/* Add CSS stylesheet */
+.header {
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+  }
+
+.search {
+  text-align: left;
+  padding: 2px;
+  background-color: white;
+  color: gray;
+  width: 20%;
+  height: 30%;
+  border-style: solid;
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.sidebar {
+  overflow: hidden;
+  width: 25%;
+}
+
+.sidebar a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sidebar a:hover {
+  background-color: lightgray;
+}
+
+#all_q {
+  /* position: relative; */
+  padding-left: 10px;
+}
+
+.ask {
+  overflow: hidden;
+  width: 110px;
+  border-style: solid;
+  position: absolute;
+  top: 115px;
+  right: 6%;
+}
+
+.ask a {
+  display: block;
+  color: white;
+  background-color: rgb(102, 177, 251);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.ask a:hover {
+  background-color: darkblue;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td:first-child{
+  border-right: 2px dotted gray;
+}
