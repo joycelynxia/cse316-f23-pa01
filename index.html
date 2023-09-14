@@ -6,9 +6,14 @@
 <body>
   <div id="header" class="header">
     <h1>Fake Stack Overflow</h1>
+    <!--
     <div class="search">
-      Search...
+    Search...
     </div>
+    -->
+
+    <input type="text" id="search" class="search"
+    placeholder="Search...">
   </div>
 
   <div id="main" class="main">
@@ -20,11 +25,20 @@
         </td>
         <!-- Content -->
         <td class="content">
-          <h2 id="all_q">All Questions</h2>
-          <div class="ask">
-            <a href="#">Ask Question</a>
+          <div class="top">
+            <h2 id="all_q">All Questions</h2>
+            <div class="ask">
+              <a href="#">Ask Question</a>
+            </div>
           </div>
-          
+          <div class="mid">
+            <div class="num_q">2 questions</div>
+            <div class="sorting-options">
+              <button id="newest">Newest</button>
+              <button id="active">Active</button>
+              <button id="unanswered">Unanswered</button>
+            </div>
+          </div>
         </td>
       </tr>
     </table>

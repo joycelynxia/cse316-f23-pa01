@@ -1,10 +1,21 @@
 .header {
+    display: flex;
+    align-items: center;
     background-color: lightgray;
     text-align: center;
     border: 1px solid black;
     position: relative;
+    padding: 15px;
   }
 
+.header h1 {
+    margin: 0;
+    margin-left: 20%;
+    flex-grow: 1;
+    text-align: center;
+}
+  
+/**
 .search {
   text-align: left;
   padding: 2px;
@@ -16,6 +27,18 @@
   position: absolute;
   top: 30%;
   right: 5%;
+}
+**/
+
+.header input{
+  position: relative;
+  float: right;
+  padding: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  width: 160px;
+  margin-right: 10px;
+  color: black;
 }
 
 .sidebar {
@@ -37,8 +60,9 @@
 }
 
 #all_q {
-  /* position: relative; */
-  padding-left: 10px;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 20px;
 }
 
 .ask {
@@ -46,7 +70,7 @@
   width: 110px;
   border-style: solid;
   position: absolute;
-  top: 115px;
+  top: 100px;
   right: 6%;
 }
 
@@ -64,10 +88,45 @@
   background-color: darkblue;
 }
 
+.mid {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.num_q {
+  position: relative;
+  padding: 20px 0 0 30px;
+  margin-right: 10px;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+}
+
+.sorting-options {
+  display: flex;
+  margin-top: 10px;
+  float: right;
+  padding-top: 15px;
+}
+
+.sorting-options button{
+  cursor: pointer;
+  border-radius: 0px;
+  padding: 5px 10px;
+  background-color: white;
+  width: 50%;
+}
+
+.sorting-options button:hover {
+  background-color: lightgray;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
 }
+
 td:first-child{
   border-right: 2px dotted gray;
 }
